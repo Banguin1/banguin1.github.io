@@ -40,8 +40,8 @@ import FlipWords from '@/components/ui/flip-words/FlipWords.vue';
 import MdiArrowDown from '~icons/mdi/arrow-down';
 
 const bannerFlipWords = [
-    'effizienten',
     'organisierten',
+    'effizienten',
     'erfolgreichen',
     'spaßigen',
     'kompetenten'
