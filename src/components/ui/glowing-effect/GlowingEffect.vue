@@ -3,15 +3,15 @@
     'pointer-events-none absolute -inset-px hidden rounded-[inherit] border opacity-0 transition-opacity',
     glow && 'opacity-100',
     variant === 'white' && 'border-white',
-    disabled && '!block',
+    disabled && 'block!',
   )
     " />
   <div ref="containerRef" :style="containerStyles" :class="cn(
     'pointer-events-none absolute inset-0 rounded-[inherit] opacity-100 transition-opacity',
     glow && 'opacity-100',
-    blur > 0 && 'blur-[var(--blur)]',
+    blur > 0 && 'blur-(--blur)',
     props.class,
-    disabled && '!hidden',
+    disabled && 'hidden!',
   )
     ">
     <div :class="cn(
@@ -19,11 +19,11 @@
       'rounded-[inherit]',
       `after:content-[''] after:rounded-[inherit] after:absolute after:inset-[calc(-1*var(--glowingeffect-border-width))]`,
       'after:[border:var(--glowingeffect-border-width)_solid_transparent]',
-      'after:[background:var(--gradient)] after:[background-attachment:fixed]',
-      'after:opacity-[var(--active)] after:transition-opacity after:duration-300',
+      'after:[background:var(--gradient)] after:bg-fixed',
+      'after:opacity-(--active) after:transition-opacity after:duration-300',
       'after:[mask-clip:padding-box,border-box]',
-      'after:[mask-composite:intersect]',
-      'after:[mask-image:linear-gradient(#0000,#0000),conic-gradient(from_calc((var(--start)-var(--spread))*1deg),#00000000_0deg,#fff,#00000000_calc(var(--spread)*2deg))]',
+      'after:mask-intersect',
+      'after:mask-[linear-gradient(#0000,#0000),conic-gradient(from_calc((var(--start)-var(--spread))*1deg),#00000000_0deg,#fff,#00000000_calc(var(--spread)*2deg))]',
     )
       " />
   </div>
@@ -144,8 +144,9 @@ function handleMove(e?: MouseEvent | PointerEvent | { x: number; y: number }) {
       lastPosition.value = { x: mouseX, y: mouseY };
     }
 
-    const center = [left + width * 0.5, top + height * 0.5];
-    const distanceFromCenter = Math.hypot(mouseX - center[0], mouseY - center[1]);
+    const centerX = left + width * 0.5;
+    const centerY = top + height * 0.5;
+    const distanceFromCenter = Math.hypot(mouseX - centerX, mouseY - centerY);
     const inactiveRadius = 0.5 * Math.min(width, height) * props.inactiveZone;
 
     if (distanceFromCenter < inactiveRadius) {
@@ -164,7 +165,7 @@ function handleMove(e?: MouseEvent | PointerEvent | { x: number; y: number }) {
     if (!isActive) return;
 
     const currentAngle = parseFloat(element.style.getPropertyValue("--start")) || 0;
-    let targetAngle = (180 * Math.atan2(mouseY - center[1], mouseX - center[0])) / Math.PI + 90;
+    let targetAngle = (180 * Math.atan2(mouseY - centerY, mouseX - centerX)) / Math.PI + 90;
 
     const angleDiff = ((targetAngle - currentAngle + 180) % 360) - 180;
     const newAngle = currentAngle + angleDiff;

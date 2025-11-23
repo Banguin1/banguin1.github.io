@@ -1,8 +1,5 @@
 <template>
-  <canvas
-    ref="canvasRef"
-    :class="cn('absolute inset-0 size-full pointer-events-none opacity-95', props.class)"
-  />
+  <canvas ref="canvasRef" :class="cn('absolute inset-0 size-full pointer-events-none opacity-95', props.class)" />
 </template>
 
 <script setup lang="ts">
@@ -244,7 +241,10 @@ function handlePointerMove(e: PointerEvent) {
 }
 
 function handleTouchMove(e: TouchEvent) {
-  updateMousePosition(e.touches[0].clientX, e.touches[0].clientY)
+  const touch = e.touches[0]
+  if (touch) {
+    updateMousePosition(touch.clientX, touch.clientY)
+  }
 }
 
 function handleClick(e: MouseEvent) {
