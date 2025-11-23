@@ -1,0 +1,72 @@
+{
+	"nzoth": {
+		"id": 1,
+		"image": "nzoth.jpg",
+		"name": "N'Zoth der Verderber",
+		"location": "N'Zoth den Verderber in Ny'alotha, der erwachten Stadt,",
+		"date": "01.07.20"
+	},
+	"denathrius": {
+		"id": 2,
+		"image": "denathrius.jpg",
+		"name": "Graf Denathrius",
+		"location": "in Schloss Nathria",
+		"date": "05.05.21"
+	},
+	"sylvanas": {
+		"id": 3,
+		"image": "sylvanas.jpg",
+		"name": "Sylvanas Windläufer",
+		"location": "im Sanktum der Herrschaft",
+		"date": "08.12.21"
+	},
+	"jailer": {
+		"id": 4,
+		"image": "jailer.jpg",
+		"name": "Der Kerkermeister",
+		"location": "den Kerkermeister im Mausoleum der Ersten",
+		"date": "19.07.22"
+	},
+	"raszageth": {
+		"id": 5,
+		"image": "raszageth.jpg",
+		"name": "Raszageth die Sturmfresserin",
+		"location": "im Gewölbe der Inkarnationen",
+		"date": "05.04.23"
+	},
+	"sarkareth": {
+		"id": 6,
+		"image": "sarkareth.jpg",
+		"name": "Schuppenkommandant Sarkareth",
+		"location": "in Abberus, Schmelztiegel der Schatten,",
+		"date": "23.08.23"
+	},
+	"fyrakk": {
+		"id": 7,
+		"image": "fyrakk.jpg",
+		"name": "Fyrakk der Lodernde",
+		"location": "Fyrakk den Lodernden in Amirdrassil, Hoffnung des Traums,",
+		"date": "27.03.24"
+	},
+	"ansurek": {
+		"id": 8,
+		"image": "ansurek.jpg",
+		"name": "Königin Ansurek",
+		"location": "im Palast der Nerub'ar",
+		"date": "19.01.25"
+	},
+	"gallywix": {
+		"id": 9,
+		"image": "gallywix.jpg",
+		"name": "Chromkönig Gallywix",
+		"location": "in der Befreiung von Lorenhall",
+		"date": "28.05.25"
+	},
+	"dimensius": {
+		"id": 10,
+		"image": "dimensius.jpg",
+		"name": "Dimensius der alles Verschlingenden",
+		"location": "Dimensius den alles Verschlingenden in der Manaschmiede Omega",
+		"date": "19.11.25"
+	}
+}
