@@ -109,7 +109,7 @@
                 </div>
 
                 <!-- Contact Section -->
-                <div class="bg-neutral-900/80 backdrop-blur-sm rounded-lg p-8 border border-neutral-700">
+                <div class="bg-neutral-900/50 backdrop-blur-sm rounded-lg p-8 border border-neutral-700">
                     <h3 class="text-xl text-neutral-200 mb-6">Interesse geweckt?</h3>
                     <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-20">
                         <div class="flex items-center gap-4">
