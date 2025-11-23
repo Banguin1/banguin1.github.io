@@ -7,7 +7,7 @@
                 </span>
             </h2>
             <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="5" :circular="true"
-                :showItemNavigators="true" :showThumbnails="true" :showThumbnailNavigators="false"
+                :showItemNavigators="true" :showThumbnails="showThumbnails" :showThumbnailNavigators="false"
                 containerStyle="max-width: 90%" class="mx-auto custom-galleria" :pt="{
                     root: {
                         class: 'border-neutral-700!'
@@ -31,6 +31,21 @@
 
 <script setup lang="ts">
 import Galleria from 'primevue/galleria';
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const showThumbnails = ref(window.innerWidth >= 1024);
+
+const updateThumbnailVisibility = () => {
+    showThumbnails.value = window.innerWidth >= 1024;
+};
+
+onMounted(() => {
+    window.addEventListener('resize', updateThumbnailVisibility);
+});
+
+onUnmounted(() => {
+    window.removeEventListener('resize', updateThumbnailVisibility);
+});
 
 const images = [
     {

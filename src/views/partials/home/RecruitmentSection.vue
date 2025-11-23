@@ -2,9 +2,10 @@
     <div class="relative w-full overflow-hidden py-32">
 
         <!-- Boss Images - Left Side (Void/Leere) -->
-        <div v-animateonscroll="{ enterClass: 'animate-fade-in-left' }" class="absolute left-0 top-32 w-1/2 lg:w-1/4">
+        <div v-animateonscroll="{ enterClass: 'animate-fade-in-left' }"
+            class="absolute left-0 top-76 lg:top-32 w-1/2 lg:w-1/4">
             <!-- Void Glow Effect -->
-            <div class="absolute inset-0 blur-[100px] opacity-60">
+            <div class="absolute inset-0 blur-[100px] opacity-60 -translate-x-40 lg:translate-x-0">
                 <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600 rounded-full"></div>
                 <div class="absolute top-1/2 left-1/3 w-80 h-80 bg-blue-900 rounded-full"></div>
                 <div class="absolute top-1/3 left-1/2 w-48 h-48 bg-indigo-800 rounded-full"></div>
@@ -13,9 +14,10 @@
         </div>
 
         <!-- Boss Images - Right Side (Light/Licht) -->
-        <div v-animateonscroll="{ enterClass: 'animate-fade-in-right' }" class="absolute right-0 top-72 w-1/2 lg:w-1/3">
+        <div v-animateonscroll="{ enterClass: 'animate-fade-in-right' }"
+            class="absolute right-0 top-82 lg:top-72 w-1/2 lg:w-1/3">
             <!-- Light Glow Effect -->
-            <div class="absolute inset-0 blur-[100px] opacity-60 -translate-y-20">
+            <div class="absolute inset-0 blur-[100px] opacity-60 translate-x-80 lg:translate-x-0 -translate-y-20">
                 <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-yellow-400 rounded-full"></div>
                 <div class="absolute top-1/2 right-1/3 w-80 h-80 bg-amber-500 rounded-full"></div>
                 <div class="absolute top-1/3 right-1/2 w-48 h-48 bg-orange-400 rounded-full"></div>
@@ -38,7 +40,7 @@
                 </p>
 
                 <!-- Two Column Layout -->
-                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="grid md:grid-cols-2 gap-12 mb-16 mt-40 lg:mt-0">
                     <!-- Was wir erwarten -->
                     <div class="bg-neutral-900/50 backdrop-blur-sm rounded-lg p-8 border border-neutral-800">
                         <h3 class="text-2xl font-bold text-[#ff4757] mb-6 flex items-center justify-center gap-2">

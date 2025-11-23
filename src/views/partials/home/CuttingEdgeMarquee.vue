@@ -1,16 +1,16 @@
 <template>
     <div class="relative w-5/6 mx-auto">
         <div
-            class="absolute left-0 top-0 bottom-0 w-60 bg-linear-to-r from-background to-transparent z-10 pointer-events-none">
+            class="absolute left-0 top-0 bottom-0 w-20 lg:w-60 bg-linear-to-r from-background to-transparent z-10 pointer-events-none">
         </div>
         <div
-            class="absolute right-0 top-0 bottom-0 w-60 bg-linear-to-l from-background to-transparent z-10 pointer-events-none">
+            class="absolute right-0 top-0 bottom-0 w-20 lg:w-60 bg-linear-to-l from-background to-transparent z-10 pointer-events-none">
         </div>
-        <Marquee class="[--duration:120s]">
+        <Marquee class="[--duration:60s] lg:[--duration:120s]">
             <AchievementCard v-for="achievement in firstFive" :key="achievement.id" :image="achievement.image"
                 :name="achievement.name" :location="achievement.location" :date="achievement.date" />
         </Marquee>
-        <Marquee class="[--duration:120s]" :reverse="true">
+        <Marquee class="[--duration:60s] lg:[--duration:120s]" :reverse="true">
             <AchievementCard v-for="achievement in lastFive" :key="achievement.id" :image="achievement.image"
                 :name="achievement.name" :location="achievement.location" :date="achievement.date" />
         </Marquee>
