@@ -1,120 +1,45 @@
 <template>
-  <svg
-    ref="svgRef"
-    width="100%"
-    height="100%"
-    viewBox="0 0 300 100"
-    xmlns="http://www.w3.org/2000/svg"
-    class="select-none"
-    @mouseenter="handleMouseEnter"
-    @mouseleave="handleMouseLeave"
-    @mousemove="handleMouseMove"
-    @touchstart="handleTouchStart"
-    @touchmove="handleTouchMove"
-    @touchend="handleTouchEnd"
-  >
+  <svg ref="svgRef" width="100%" height="100%" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg"
+    class="select-none" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" @mousemove="handleMouseMove"
+    @touchstart="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd">
     <defs>
-      <linearGradient
-        id="textGradient"
-        gradientUnits="userSpaceOnUse"
-        cx="50%"
-        cy="50%"
-        r="25%"
-      >
-        <stop
-          v-if="hovered"
-          offset="0%"
-          stop-color="var(--yellow-500)"
-        />
-        <stop
-          v-if="hovered"
-          offset="25%"
-          stop-color="var(--red-500)"
-        />
-        <stop
-          v-if="hovered"
-          offset="50%"
-          stop-color="var(--blue-500)"
-        />
-        <stop
-          v-if="hovered"
-          offset="75%"
-          stop-color="var(--cyan-500)"
-        />
-        <stop
-          v-if="hovered"
-          offset="100%"
-          stop-color="var(--violet-500)"
-        />
+      <linearGradient id="textGradient" gradientUnits="userSpaceOnUse" cx="50%" cy="50%" r="25%">
+        <stop v-if="hovered" offset="0%" stop-color="var(--yellow-500)" />
+        <stop v-if="hovered" offset="25%" stop-color="var(--red-500)" />
+        <stop v-if="hovered" offset="50%" stop-color="var(--blue-500)" />
+        <stop v-if="hovered" offset="75%" stop-color="var(--cyan-500)" />
+        <stop v-if="hovered" offset="100%" stop-color="var(--violet-500)" />
       </linearGradient>
 
       <!-- Radial Gradient -->
-      <radialGradient
-        id="revealMask"
-        gradientUnits="userSpaceOnUse"
-        r="20%"
-        :cx="maskPosition.cx"
-        :cy="maskPosition.cy"
+      <radialGradient id="revealMask" gradientUnits="userSpaceOnUse" r="20%" :cx="maskPosition.cx" :cy="maskPosition.cy"
         :style="{
           transition: `cx ${transitionDuration}ms ease-out, cy ${transitionDuration}ms ease-out`,
-        }"
-      >
-        <stop
-          offset="0%"
-          stop-color="white"
-        />
-        <stop
-          offset="100%"
-          stop-color="black"
-        />
+        }">
+        <stop offset="0%" stop-color="white" />
+        <stop offset="100%" stop-color="black" />
       </radialGradient>
 
       <mask id="textMask">
-        <rect
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          fill="url(#revealMask)"
-        />
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#revealMask)" />
       </mask>
     </defs>
 
-    <text
-      x="50%"
-      y="50%"
-      text-anchor="middle"
-      dominant-baseline="middle"
-      :stroke-width="strokeWidth"
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" :stroke-width="strokeWidth"
       :style="{ opacity: hovered ? opacity : 0 }"
-      class="fill-transparent stroke-neutral-200 font-[helvetica] text-7xl font-bold dark:stroke-neutral-800"
-    >
+      class="fill-transparent stroke-neutral-200 font-[helvetica] text-7xl font-bold dark:stroke-neutral-800">
       {{ text }}
     </text>
 
     <!-- Animated Text Stroke -->
-    <text
-      x="50%"
-      y="50%"
-      text-anchor="middle"
-      dominant-baseline="middle"
-      :stroke-width="strokeWidth"
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" :stroke-width="strokeWidth"
       :style="strokeStyle"
-      class="fill-transparent stroke-neutral-200 font-[helvetica] text-7xl font-bold dark:stroke-neutral-800"
-    >
+      class="fill-transparent stroke-neutral-200 font-[helvetica] text-7xl font-bold dark:stroke-neutral-800">
       {{ text }}
     </text>
 
-    <text
-      x="50%"
-      y="50%"
-      text-anchor="middle"
-      dominant-baseline="middle"
-      stroke="url(#textGradient)"
-      :stroke-width="strokeWidth"
-      mask="url(#textMask)"
-      class="fill-transparent font-[helvetica] text-7xl font-bold"
-    >
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" stroke="url(#textGradient)"
+      :stroke-width="strokeWidth" mask="url(#textMask)" class="fill-transparent font-[helvetica] text-7xl font-bold">
       {{ text }}
     </text>
   </svg>
@@ -182,8 +107,10 @@ function handleTouchStart(e: TouchEvent) {
 
 function handleTouchMove(e: TouchEvent) {
   const touch = e.touches[0];
-  cursor.x = touch.clientX;
-  cursor.y = touch.clientY;
+  if (touch) {
+    cursor.x = touch.clientX;
+    cursor.y = touch.clientY;
+  }
 }
 
 function handleTouchEnd() {
