@@ -10,14 +10,14 @@
 		"id": 2,
 		"image": "denathrius.jpg",
 		"name": "Graf Denathrius",
-		"location": "in Schloss Nathria",
+		"location": "Graf Denathrius in Schloss Nathria",
 		"date": "05.05.21"
 	},
 	"sylvanas": {
 		"id": 3,
 		"image": "sylvanas.jpg",
 		"name": "Sylvanas Windläufer",
-		"location": "im Sanktum der Herrschaft",
+		"location": "Sylvanas Windläufer im Sanktum der Herrschaft",
 		"date": "08.12.21"
 	},
 	"jailer": {
@@ -31,14 +31,14 @@
 		"id": 5,
 		"image": "raszageth.jpg",
 		"name": "Raszageth die Sturmfresserin",
-		"location": "im Gewölbe der Inkarnationen",
+		"location": "Raszageth die Sturmfresserin im Gewölbe der Inkarnationen",
 		"date": "05.04.23"
 	},
 	"sarkareth": {
 		"id": 6,
 		"image": "sarkareth.jpg",
 		"name": "Schuppenkommandant Sarkareth",
-		"location": "in Abberus, Schmelztiegel der Schatten,",
+		"location": "Schuppenkommandant Sarkareth in Abberus, Schmelztiegel der Schatten,",
 		"date": "23.08.23"
 	},
 	"fyrakk": {
@@ -52,14 +52,14 @@
 		"id": 8,
 		"image": "ansurek.jpg",
 		"name": "Königin Ansurek",
-		"location": "im Palast der Nerub'ar",
+		"location": "Königin Ansurek im Palast der Nerub'ar",
 		"date": "19.01.25"
 	},
 	"gallywix": {
 		"id": 9,
 		"image": "gallywix.jpg",
 		"name": "Chromkönig Gallywix",
-		"location": "in der Befreiung von Lorenhall",
+		"location": "Chromkönig Gallywix in der Befreiung von Lorenhall",
 		"date": "28.05.25"
 	},
 	"dimensius": {
