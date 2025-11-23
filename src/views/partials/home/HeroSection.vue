@@ -48,15 +48,14 @@ const bannerFlipWords = [
 ]
 
 const scrollIndicatorOpacity = ref(0.3)
-const animatedHue = ref(220) // Start bei Lila
+const animatedHue = ref(220) // Start bei Blau
 
-// Animation für Farbwechsel zwischen Lila (280°) und Orange (30°)
+// Animation für Farbwechsel zwischen Blau (220°) und Rot (350°)
 let animationFrameId: number
 const animateHue = () => {
     const time = Date.now() * 0.0005 // Langsame Animation
-    // Interpoliere zwischen 280 (Lila) und 30 (Orange)
-    animatedHue.value = 220 + (Math.sin(time) * 0.5 + 0.5) * (30 - 220 + 360)
-    if (animatedHue.value > 360) animatedHue.value -= 360
+    // Interpoliere zwischen 220 und 350
+    animatedHue.value = 220 + (Math.sin(time) * 0.5 + 0.5) * (350 - 220)
     animationFrameId = requestAnimationFrame(animateHue)
 }
 
