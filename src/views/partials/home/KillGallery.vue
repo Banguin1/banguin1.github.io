@@ -2,7 +2,7 @@
     <div class="kill-gallery-section py-32">
         <div class="container flex flex-col items-center">
             <h2 class="flex justify-center text-4xl lg:text-5xl md:text-6xl font-bold mb-10">
-                <span class="bg-linear-to-r from-[#ff4757] to-[#80af13] bg-clip-text text-transparent">
+                <span class="bg-linear-to-r from-[#9333ea] to-[#f59e0b] bg-clip-text text-transparent">
                     Ein Team. Ein Ziel.
                 </span>
             </h2>

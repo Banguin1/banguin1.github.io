@@ -10,8 +10,8 @@
                     <span class="text-neutral-400">
                         für
                     </span>
-                    <span class="inline-flex justify-centermin-w-[200px] w-[200px]">
-                        <FlipWords :words="bannerFlipWords" class="text-neutral-300 font-bold" />
+                    <span class="inline-flex justify-center min-w-[200px] w-[200px]">
+                        <FlipWords :words="bannerFlipWords" class="text-neutral-300 font-bold -mr-2" />
                     </span>
                     <span class="text-neutral-400">
                         Progress
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="flex flex-col  items-center z-10">
-                <h1 class="text-9xl font-bold bg-linear-to-r from-[#ff4757] to-[#80af13] bg-clip-text text-transparent">
+                <h1 class="text-9xl font-bold bg-linear-to-r from-[#9333ea] to-[#f59e0b] bg-clip-text text-transparent">
                     Xore
                 </h1>
                 <span class="text-2xl text-neutral-400">EU - Eredar</span>
@@ -29,7 +29,7 @@
             :style="{ opacity: scrollIndicatorOpacity }">
             <MdiArrowDown class="w-8 h-8 text-white" />
         </div>
-        <BgNeural :hue="310" :chroma="0.4" class="opacity-50" />
+        <BgNeural :hue="animatedHue" :chroma="0.4" class="opacity-50" />
     </div>
 </template>
 
@@ -40,12 +40,25 @@ import FlipWords from '@/components/ui/flip-words/FlipWords.vue';
 import MdiArrowDown from '~icons/mdi/arrow-down';
 
 const bannerFlipWords = [
-    'respektvollen',
+    'effizienten',
     'organisierten',
     'erfolgreichen',
+    'spaßigen',
+    'kompetenten'
 ]
 
 const scrollIndicatorOpacity = ref(0.3)
+const animatedHue = ref(220) // Start bei Lila
+
+// Animation für Farbwechsel zwischen Lila (280°) und Orange (30°)
+let animationFrameId: number
+const animateHue = () => {
+    const time = Date.now() * 0.0005 // Langsame Animation
+    // Interpoliere zwischen 280 (Lila) und 30 (Orange)
+    animatedHue.value = 220 + (Math.sin(time) * 0.5 + 0.5) * (30 - 220 + 360)
+    if (animatedHue.value > 360) animatedHue.value -= 360
+    animationFrameId = requestAnimationFrame(animateHue)
+}
 
 const handleScroll = () => {
     const scrolled = window.scrollY
@@ -56,10 +69,14 @@ const handleScroll = () => {
 
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
+    animateHue()
 })
 
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
+    if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId)
+    }
 })
 </script>
 

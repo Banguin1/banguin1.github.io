@@ -30,7 +30,7 @@
             <div class="max-w-3xl mx-auto text-center">
                 <!-- Headline -->
                 <h2 class="text-5xl md:text-6xl font-bold mb-4">
-                    <span class="bg-linear-to-r from-[#ff4757] to-[#80af13] bg-clip-text text-transparent">
+                    <span class="bg-linear-to-r from-[#9333ea] to-[#f59e0b] bg-clip-text text-transparent">
                         Bereit für Progress?
                     </span>
                 </h2>
@@ -43,7 +43,7 @@
                 <div class="grid md:grid-cols-2 gap-12 mb-16 mt-40 lg:mt-0">
                     <!-- Was wir erwarten -->
                     <div class="bg-neutral-900/50 backdrop-blur-sm rounded-lg p-8 border border-neutral-800">
-                        <h3 class="text-2xl font-bold text-[#ff4757] mb-6 flex items-center justify-center gap-2">
+                        <h3 class="text-2xl font-bold text-[#9333ea] mb-6 flex items-center justify-center gap-2">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -52,23 +52,23 @@
                         </h3>
                         <ul class="text-left space-y-3 text-neutral-300">
                             <li class="flex items-center gap-3">
-                                <span class="text-[#ff4757] mt-1">▸</span>
+                                <span class="text-[#9333ea] mt-1">▸</span>
                                 <span>85%+ Raidanwesenheit</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#ff4757] mt-1">▸</span>
+                                <span class="text-[#9333ea] mt-1">▸</span>
                                 <span>Aktives Gameplay außerhalb der Raids</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#ff4757] mt-1">▸</span>
+                                <span class="text-[#9333ea] mt-1">▸</span>
                                 <span>Klassenverständnis und Flexibilität</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#ff4757] mt-1">▸</span>
+                                <span class="text-[#9333ea] mt-1">▸</span>
                                 <span>Eigenständige Vorbereitung</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#ff4757] mt-1">▸</span>
+                                <span class="text-[#9333ea] mt-1">▸</span>
                                 <span>Teamfähigkeit & Kommunikation</span>
                             </li>
                         </ul>
@@ -76,7 +76,7 @@
 
                     <!-- Was wir bieten -->
                     <div class="bg-neutral-900/50 backdrop-blur-sm rounded-lg p-8 border border-neutral-800">
-                        <h3 class="text-2xl font-bold text-[#80af13] mb-6 flex items-center justify-center gap-2">
+                        <h3 class="text-2xl font-bold text-[#f59e0b] mb-6 flex items-center justify-center gap-2">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -85,23 +85,23 @@
                         </h3>
                         <ul class="text-left space-y-3 text-neutral-300">
                             <li class="flex items-center gap-3">
-                                <span class="text-[#80af13] mt-1">▸</span>
+                                <span class="text-[#f59e0b] mt-1">▸</span>
                                 <span>Strukturierte Raids</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#80af13] mt-1">▸</span>
+                                <span class="text-[#f59e0b] mt-1">▸</span>
                                 <span>Erfahrene Raidleitung</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#80af13] mt-1">▸</span>
+                                <span class="text-[#f59e0b] mt-1">▸</span>
                                 <span>Freundliche & respektvolle Community</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#80af13] mt-1">▸</span>
+                                <span class="text-[#f59e0b] mt-1">▸</span>
                                 <span>Erfolgreiche Progress-Geschichte</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <span class="text-[#80af13] mt-1">▸</span>
+                                <span class="text-[#f59e0b] mt-1">▸</span>
                                 <span>M+ Gruppen & andere Aktivitäten</span>
                             </li>
                         </ul>
