@@ -9,15 +9,17 @@
 
                 <!-- Links -->
                 <div class="flex items-center gap-20">
-                    <a href="https://www.wowprogress.com/guild/eu/eredar/Xore" class="flex items-center gap-2">
+                    <a href="https://www.wowprogress.com/guild/eu/eredar/Xore" target="_blank"
+                        class="flex items-center gap-2">
                         <img src="../assets/images/wowprogress.webp" alt="Wowprogress Badge" class="h-8 w-8" />
                         <span>wowprogress</span>
                     </a>
-                    <a href="https://raider.io/guilds/eu/eredar/Xore" class="flex items-center gap-2">
+                    <a href="https://raider.io/guilds/eu/eredar/Xore" target="_blank" class="flex items-center gap-2">
                         <img src="../assets/images/raiderio.webp" alt="Raider.io Badge" class="h-8 w-8" />
                         <span>raider.io</span>
                     </a>
-                    <a href="https://www.warcraftlogs.com/guild/id/320951" class="flex items-center gap-2">
+                    <a href="https://www.warcraftlogs.com/guild/id/320951" target="_blank"
+                        class="flex items-center gap-2">
                         <img src="../assets/images/wowlogs.webp" alt="Warcraft Logs Badge" class="h-8 w-8" />
                         <span>warcraft logs</span>
                     </a>
