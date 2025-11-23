@@ -8,7 +8,6 @@ import Icons from 'unplugin-icons/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: '/xore-project/',
 	plugins: [vue(), vueDevTools(), tailwindcss(), Icons({})],
 	resolve: {
 		alias: {
