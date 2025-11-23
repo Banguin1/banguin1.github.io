@@ -27,7 +27,7 @@
 
                 <!-- Copyright -->
                 <div class="text-center md:text-right">
-                    <p class="text-xs text-neutral-500">
+                    <p @click="router.push('/uschi')" class="text-xs text-neutral-500">
                         © {{ currentYear }} Xore. All rights reserved.
                     </p>
                 </div>
@@ -37,6 +37,10 @@
 </template>
 
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+
+
+const router = useRouter();
 const currentYear = new Date().getFullYear();
 </script>
 
