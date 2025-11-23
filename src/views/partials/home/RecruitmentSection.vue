@@ -2,7 +2,7 @@
     <div class="relative w-full overflow-hidden py-32">
 
         <!-- Boss Images - Left Side (Void/Leere) -->
-        <div v-animateonscroll="{ enterClass: 'animate-fade-in-left' }" class="absolute left-0 top-32 w-1/4">
+        <div v-animateonscroll="{ enterClass: 'animate-fade-in-left' }" class="absolute left-0 top-32 w-1/2 lg:w-1/4">
             <!-- Void Glow Effect -->
             <div class="absolute inset-0 blur-[100px] opacity-60">
                 <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600 rounded-full"></div>
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Boss Images - Right Side (Light/Licht) -->
-        <div v-animateonscroll="{ enterClass: 'animate-fade-in-right' }" class="absolute right-0 top-72 w-1/3">
+        <div v-animateonscroll="{ enterClass: 'animate-fade-in-right' }" class="absolute right-0 top-72 w-1/2 lg:w-1/3">
             <!-- Light Glow Effect -->
             <div class="absolute inset-0 blur-[100px] opacity-60 -translate-y-20">
                 <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-yellow-400 rounded-full"></div>
@@ -32,7 +32,8 @@
                         Bereit für Progress?
                     </span>
                 </h2>
-                <p class="text-xl text-neutral-400 mb-16">
+                <p
+                    class="text-xl p-2 bg-neutral-900/50 rounded-lg lg:bg-transparent lg:p-0 text-neutral-100 lg:text-neutral-400 mb-16">
                     Wir suchen motivierte Raider für unseren Mythic Kader
                 </p>
 
@@ -108,7 +109,7 @@
                 <!-- Contact Section -->
                 <div class="bg-neutral-900/80 backdrop-blur-sm rounded-lg p-8 border border-neutral-700">
                     <h3 class="text-xl text-neutral-200 mb-6">Interesse geweckt?</h3>
-                    <div class="flex items-center justify-center gap-20">
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-20">
                         <div class="flex items-center gap-4">
                             <MdiBattlenet class="w-12 h-12 text-[#1690ff]" />
                             <span class="font-bold text-3xl">Scathyo#2492</span>

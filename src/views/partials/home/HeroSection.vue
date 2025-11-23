@@ -1,7 +1,8 @@
 <template>
     <div class="h-dvh w-full flex items-center justify-center relative">
-        <div class="flex items-center justify-between w-1/2 h-full">
-            <div class="flex flex-col text-3xl z-10">
+        <div
+            class="flex flex-col-reverse lg:flex-row justify-center gap-20 items-center lg:justify-between lg:w-1/2 h-full">
+            <div class="flex flex-col text-3xl z-10 mx-6 lg:mx-0">
                 <span class="text-neutral-400">
                     Deine World of Warcraft Community
                 </span>

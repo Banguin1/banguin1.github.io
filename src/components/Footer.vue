@@ -8,7 +8,7 @@
                 </div>
 
                 <!-- Links -->
-                <div class="flex items-center gap-20">
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
                     <a href="https://www.wowprogress.com/guild/eu/eredar/Xore" target="_blank"
                         class="flex items-center gap-2">
                         <img src="../assets/images/wowprogress.webp" alt="Wowprogress Badge" class="h-8 w-8" />
