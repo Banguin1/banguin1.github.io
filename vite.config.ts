@@ -8,7 +8,7 @@ import Icons from 'unplugin-icons/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-	base: '/', // Für User/Org-Pages: base ist '/'
+	base: './', // Für User/Org-Pages: base ist '/'
 	plugins: [vue(), vueDevTools(), tailwindcss(), Icons({})],
 	resolve: {
 		alias: {
